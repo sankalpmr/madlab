@@ -1,0 +1,825 @@
+```````Program 1 - Visiting Card``````
+
+ === XML Code =====
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="291dp"
+        android:layout_marginRight="291dp"
+        android:layout_marginBottom="553dp"
+        android:text="TJIT"
+        android:textSize="38dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="231dp"
+        android:layout_height="174dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="482dp"
+        app:srcCompat="@drawable/tjit_logo" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4444"
+        android:layout_marginBottom="466dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="394dp"
+        android:text="Name"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="126dp"
+        android:layout_marginRight="126dp"
+        android:layout_marginBottom="334dp"
+        android:text="6th Sem - CSE"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="287dp"
+        android:text="Ph No: 000000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="173dp"
+        android:text="Address: Gottigere, Bengaluru-83"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="244dp"
+        android:text="Email: abc@tjohngroup.com"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+
+
+
+
+JAVA CODE
+
+==== package com.example.visiting_card; =====
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+```````````Program 2 - Simple Calculator``````````
+
+
+====== XML =====
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="532dp"
+        android:text="Simple Calculator"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="129dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="386dp"
+        android:ems="10"
+        android:hint="Enter 1st Num"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="127dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="388dp"
+        android:ems="10"
+        android:hint="Enter 2nd Num"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="344dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="254dp"
+        android:onClick="doAdd"
+        android:textColor="#ff0000"
+        android:background="@color/black"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="253dp"
+        android:onClick="doSub"
+        android:textColor="#ff0000"
+        android:background="@color/black"
+        android:text="SUB" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="271dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="doMul"
+        android:textColor="#ff0000"
+        android:background="@color/black"
+        android:text="MUL" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="doDiv"
+        android:textColor="#ff0000"
+        android:background="@color/black"
+        android:text="DIV" />
+</RelativeLayout>
+
+
+
+===== JAVA CODE ========
+
+
+package com.example.calculator;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+public class MainActivity extends AppCompatActivity {
+    EditText e1,e2;
+    TextView tv1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        e1 = (EditText)findViewById(R.id.editText1);
+        e2 = (EditText)findViewById(R.id.editText2);
+        tv1 = (TextView)findViewById(R.id.textView1);
+    }
+    public void doAdd(View V){
+        int a1 = Integer.parseInt(e1.getText().toString());
+        int a2 = Integer.parseInt(e2.getText().toString());
+        int result= a1+a2;
+        tv1.setText(""+result);
+    }
+    public void doSub(View V){
+        int a1 = Integer.parseInt(e1.getText().toString());
+        int a2 = Integer.parseInt(e2.getText().toString());
+        int result= a1-a2;
+        tv1.setText(""+result);
+    }
+    public void doMul(View V){
+        int a1 = Integer.parseInt(e1.getText().toString());
+        int a2 = Integer.parseInt(e2.getText().toString());
+        int result= a1*a2;
+        tv1.setText(""+result);
+    }
+    public void doDiv(View V){
+        int a1 = Integer.parseInt(e1.getText().toString());
+        int a2 = Integer.parseInt(e2.getText().toString());
+        float result= a1/a2;
+        tv1.setText(""+result);
+    }
+}
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+``````````Program 4 - Wallpaper Change`````````````
+
+
+=== XML CODE ====
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="576dp"
+        android:text="Wall Paper Change Application"
+        android:textSize="28dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="189dp"
+        android:text="Click Here To Change Wall Paper"
+        android:textSize="26dp" />
+</RelativeLayout>
+
+
+
+
+===== JAVA CODE ======
+
+
+package com.example.wallpaper;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.app.WallpaperManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class MainActivity extends AppCompatActivity {
+    Button changewallpaper;
+    Timer mytimer;
+    Drawable drawable;
+    WallpaperManager wpm;
+    int prev=1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mytimer = new Timer();
+        wpm = WallpaperManager.getInstance(this);
+        changewallpaper = findViewById(R.id.button);
+        changewallpaper.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                setWallpaper();
+            }
+        });
+    }
+    private void setWallpaper() {
+        mytimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                if (prev == 1) {
+                    drawable = getResources().getDrawable(R.drawable.one);
+                    prev = 2;
+                } else if (prev == 2) {
+                    drawable = getResources().getDrawable(R.drawable.two);
+                    prev = 3;
+                } else if (prev == 3) {
+                    drawable = getResources().getDrawable(R.drawable.three);
+                    prev = 4;
+                } else if (prev == 4) {
+                    drawable = getResources().getDrawable(R.drawable.four);
+                    prev = 5;
+                } else if (prev == 5) {
+                    drawable = getResources().getDrawable(R.drawable.five);
+                    prev = 1;
+                }
+                Bitmap wallpaper = ((BitmapDrawable) drawable).getBitmap();
+                try {
+                    wpm.setBitmap(wallpaper);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        },0,300000);}}
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+````````Program 5 - Counter Activity```````````
+
+
+==== XML CODE =====
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="378dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="602dp"
+        android:text="Counter Application"
+        android:textSize="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="121dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="478dp"
+        android:text="Counter Value" />
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="297dp"
+        android:layout_marginBottom="295dp"
+        android:text="Start" />
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="292dp"
+        android:text="Stop" />
+</RelativeLayout>
+
+
+
+
+======= JAVA CODE ======
+
+
+package com.example.counteractivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+public class MainActivity extends AppCompatActivity {
+    Button btnstart, btnstop;
+    TextView txtcounter;
+    int i=1;
+    Handler customHandler=new Handler();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btnstart=findViewById(R.id.btn_start);
+        btnstop=findViewById(R.id.btn_stop);
+        txtcounter=findViewById(R.id.textView);
+        btnstart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customHandler.postDelayed(updateTimerThread,0);
+            }
+        });
+        btnstop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customHandler.removeCallbacks(updateTimerThread);
+            }
+        });
+    }
+    private final Runnable updateTimerThread=new Runnable() {
+        @Override
+        public void run() {
+            txtcounter.setText(""+i);
+            customHandler.postDelayed(this,1000);
+            i++;
+        }
+    };
+}
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+`````````Program 6 - JSON````````
+
+
+
+===XML==== 
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="634dp"
+        android:text="Parsing XML and JSON"
+        android:textSize="36sp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="484dp"
+        android:onClick="parsexml"
+        android:text="ParseXML" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="364dp"
+        android:onClick="parsejson"
+        android:text="ParJSON" />
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="68dp"
+        android:text=""
+        android:textAlignment="center" />
+</RelativeLayout>
+
+
+===JAVA====
+
+package com.example.jsonparser;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.text.style.TabStopSpan;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+public class MainActivity extends AppCompatActivity {
+    TextView display;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        display = (TextView)findViewById(R.id.display);
+    }
+    public void parsexml(View V)
+    {
+        try {
+            InputStream is = getAssets().open("city.xml");
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.parse(is);
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append("XML DATA");
+            stringBuilder.append("\n---------");
+            NodeList nodeList = document.getElementsByTagName("place");
+            for (int i = 0; i < nodeList.getLength(); i++)
+            {
+                Node node = nodeList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) node;
+                    stringBuilder.append("\nName: ").append(getValue("name", element));
+                    stringBuilder.append("\nLatitude: ").append(getValue("lat", element));
+                    stringBuilder.append("\nLongitude: ").append(getValue("long", element));
+                    stringBuilder.append("\nTemperature: ").append(getValue("temperature", element));
+                    stringBuilder.append("\nHumidity: ").append(getValue("humidity", element));
+                    stringBuilder.append("\n----------");
+                }
+            }
+            display.setText(stringBuilder.toString());
+        }catch (Exception e){
+            e.printStackTrace();
+            Toast.makeText(MainActivity.this,"Error Parsing XML",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void parsejson(View V){
+        String json;
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            InputStream is = getAssets().open("city.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            json = new String(buffer, StandardCharsets.UTF_8);
+            JSONArray jsonArray = new JSONArray(json);
+            stringBuilder.append("JSON DATA");
+            stringBuilder.append("\n--------");
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                stringBuilder.append("\nName: ").append(jsonObject.getString("name"));
+                stringBuilder.append("\nLatitude: ").append(jsonObject.getString("lat"));
+                stringBuilder.append("\nLongitude: ").append(jsonObject.getString("long"));
+                stringBuilder.append("\nTemperature: ").append(jsonObject.getString("temperature"));
+                stringBuilder.append("\nHumidity: ").append(jsonObject.getString("humidity"));
+                stringBuilder.append("\n----------");
+            }
+            display.setText(stringBuilder.toString());
+            is.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            Toast.makeText(MainActivity.this,"Error in reading",Toast.LENGTH_LONG).show();
+        }
+    }
+    private String getValue(String tag, Element element)
+    {
+        return element.getElementsByTagName(tag).item(0).getChildNodes().item(0).getNodeValue();
+    }
+}
+
+
+
+city.xml
+
+<?xml version="1.0"?>
+<records>
+    <place>
+        <name>Mysore</name>
+        <lat>12.295</lat>
+        <long>76.639</long>
+        <temperature>22</temperature>
+        <humidity>90 %</humidity>
+    </place>
+    <place>
+        <name>Bangalore</name>
+        <lat>12.97165</lat>
+        <long>77.5946</long>
+        <temperature>25</temperature>
+        <humidity>74 %</humidity>
+    </place>
+</records>
+
+
+city.json
+
+[
+  {
+    "name": "HASSAN",
+    "lat": "12.295",
+    "long": "76.639",
+    "temperature": "22",
+    "humidity": "92 %"
+  },
+  {
+    "name": "MANDYA",
+    "lat": "12.97165",
+    "long": "77.5946",
+    "temperature": "25",
+    "humidity": "74 %"
+  }
+]
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+`````````Program 7 - Text to Speech`````````
+
+
+====== XML CODE =====
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="649dp"
+        android:text="Text2SpeechApp"
+        android:textSize="40dp" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="514dp"
+        android:ems="10"
+        android:hint="Enter the text to be converted"
+        android:inputType="textPersonName"
+        android:text="" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="162dp"
+        android:onClick="convert"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="329dp"
+        android:text="Convert" />
+</RelativeLayout>
+
+
+
+====== JAVA CODE ========
+
+
+package com.example.texttospech;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+import java.util.Locale;
+public class MainActivity extends AppCompatActivity {
+    TextToSpeech t1;
+    EditText e1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        e1 = findViewById(R.id.editText);
+        t1 = new TextToSpeech(getApplicationContext(), new
+                TextToSpeech.OnInitListener() {
+                    @Override
+                    public void onInit(int status) {
+                        if (status!=TextToSpeech.ERROR){
+                            t1.setLanguage(Locale.UK);
+                        }
+                    }
+                });
+    }
+    public void convert(View view){
+        String tospeak = e1.getText().toString();
+        t1.speak(tospeak,TextToSpeech.QUEUE_FLUSH,null);
+    }
+}
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
